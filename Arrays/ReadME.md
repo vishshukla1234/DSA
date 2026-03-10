@@ -23,3 +23,9 @@ Output:
 Explanation:
 
 nums[0] + nums[1] = 2 + 7 = 9
+
+## Approach 1: **Brute Force**
+
+**Time Complexity:** O(n²)  
+
+**Space Complexity:** O(1)
