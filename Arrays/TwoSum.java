@@ -1,3 +1,4 @@
+
 // -----------------------------------------NAIVE APPROACH-------------------------------------------
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
@@ -15,8 +16,11 @@ public class TwoSum {
         return new int[] {};
     }
 }
-// ---------------------------BETTER APPROACH---------------------------------------------------------
+
+// ---------------------------BETTER
+// APPROACH---------------------------------------------------------
 import java.util.*;
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
 
@@ -52,7 +56,8 @@ class Solution {
         return new int[]{};
     }
 }
-// ---------------------------OPTIMAL APPROACH---------------------------------------------------------
+// ---------------------------OPTIMAL
+// APPROACH---------------------------------------------------------
 import java.util.*;
 
 class Solution {
@@ -60,17 +65,17 @@ class Solution {
 
         HashMap<Integer, Integer> map = new HashMap<>();
 
-        for(int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
 
             int complement = target - nums[i];
 
-            if(map.containsKey(complement)) {
-                return new int[]{map.get(complement), i};
+            if (map.containsKey(complement)) {
+                return new int[] { map.get(complement), i };
             }
 
             map.put(nums[i], i);
         }
 
-        return new int[]{};
+        return new int[] {};
     }
 }
