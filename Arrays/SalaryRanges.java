@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class SalaryRanges {
     public static List<String> summaryRanges(int[] nums) {
